@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "survivaldebugstick",
+  "version": "${version}",
+
+  "name": "Survival Debug Stick",
+  "description": "Lets Survival Players Use The Debug Stick",
+  "authors": [
+    "Trikzon"
+  ],
+  "contact": {
+    "homepage": "https://minecraft.curseforge.com/projects/survival-debug-stick",
+    "sources": "https://github.com/Trikzon/Survival-Debug-Stick"
+  },
+
+  "license": "GPLv3",
+  "icon": "assets/survivaldebugstick/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ]
+  },
+  "mixins": [
+    "survivaldebugstick.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

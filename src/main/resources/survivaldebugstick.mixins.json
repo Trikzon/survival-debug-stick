@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "trikzon.survivaldebugstick.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "DebugStickItemMixin",
+    "ServerPlayerInteractionManagerMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
