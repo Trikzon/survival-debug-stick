@@ -15,7 +15,7 @@ public abstract class ServerPlayerInteractionManagerMixin {
 
     @Redirect(method = "method_14263", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/BlockState;calcBlockBreakingDelta(Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/world/BlockView;Lnet/minecraft/util/math/BlockPos;)F"))
     public float calcBlockBreakingDeltaProxy(BlockState blockState_1, PlayerEntity playerEntity_1, BlockView blockView_1, BlockPos blockPos_1) {
-        if (playerEntity_1.getMainHandStack().getItem().equals(Items.DEBUG_STICK)) {
+        if (playerEntity_1.getMainHandStack().getItem().equals(Items.field_8688)) {
             return 1.0F;
         } else {
             return blockState_1.calcBlockBreakingDelta(playerEntity_1, blockView_1, blockPos_1);
