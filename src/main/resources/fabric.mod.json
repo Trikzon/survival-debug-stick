@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "survivaldebugstick",
+  "id": "survival-debug-stick",
   "version": "${version}",
 
   "name": "Survival Debug Stick",
@@ -14,22 +14,15 @@
   },
 
   "license": "GPLv3",
-  "icon": "assets/survivaldebugstick/icon.png",
+  "icon": "assets/survival-debug-stick/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.trikzon.survivaldebugstick.SurvivalDebugStick"
+      "com.trikzon.survival_debug_stick.SurvivalDebugStick"
     ]
   },
   "mixins": [
-    "survivaldebugstick.mixins.json"
-  ],
-
-  "depends": {
-    "fabricloader": ">=0.7.2"
-  },
-  "suggests": {
-    "flamingo": "*"
-  }
+    "survival-debug-stick.mixins.json"
+  ]
 }
